@@ -86,8 +86,8 @@
           <img class="serviceimg" src="images/service3.jpg" alt="">
           <h2>MAKEUP WORKSHOPS</h2>
         </div>
-
       </div>
+      <a href="#contactme" class="btn btn-outline-light">Click here for enqueries</a>
 
     </section>
 
@@ -117,19 +117,19 @@
       <div id="reviews" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h1 class="rev-text">The makeup was amazing thank you for making this day best</h1>
+            <h1 class="rev-text">The makeover was magical and I couldn't believe my eyes. I received a lot of compliments and calls commenting about how good the makeup was.</h1>
             <img class="rev" src="images/del1.jpg" alt="First slide">
-            <p>Lorem ipsum</p>
+            <p style="color:white">Gautami</p>
           </div>
           <div class="carousel-item">
-            <h1 class="rev-text">The makeup was amazing thank you for making this day best</h1>
+            <h1 class="rev-text">Thanks a ton to Kalyani for the wonderful makeup. She was so patient and flexible when there were time constraints and problems. The best ever!</h1>
             <img class="rev" src="images/del2.jpg" alt="Second slide">
-            <p>Lorem ipsum</p>
+            <p style="color:white">Chandini</p>
           </div>
           <div class="carousel-item">
-            <h1 class="rev-text">The makeup was amazing thank you for making this day best</h1>
+            <h1 class="rev-text">One of the best decisions I made is to book Moksha. She turned me into a princess on my special day.</h1>
             <img class="rev" src="images/del3.jpg" alt="Third slide">
-            <p>Lorem ipsum</p>
+            <p style="color:white">Shamala</p>
           </div>
         </div>
         <a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
@@ -143,18 +143,59 @@
     </div>
     </section>
 
-    <section id="contact">
+    <section id="contactme">
+      <div class="gallerybg">
+        <h1 style="font-size:90px;color:white">CONTACT ME</h1>
+      </div>
+      <h3>Fill in the form and I'll get back to you or contact me via one of the links at the bottom of the page</h3>
+      <div class="contactform">
+        <form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbyoNgAWyp49lEkpf1xGcQhltZ3OzmducY1UubBn/exec">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your name..">
+
+          <label for="lname">Phone Number</label>
+          <input type="text" id="lname" name="phone" placeholder="Your phone number..">
+
+          <label for="lname">Email ID</label>
+          <input type="text" id="lname" name="email" placeholder="Your e-mail ID..">
+
+          <label for="lname">Type of Service</label>
+          <select id="servicetype" name="servicetype">
+            <option value="default">Select</option>
+            <option value="bridal">Bridal Makeup</option>
+            <option value="party">Party Makeup</option>
+            <option value="workshop">Makeup Workshop</option>
+          </select>
+
+          <label for="date">Location of event</label>
+          <input type="text" id="Date" name="location" placeholder="Location of event.." autocomplete="off">
+
+          <label for="date">Date of event</label><br>
+          <input type="date" id="date" name="date" placeholder="Date of event.."><br><br>
+
+          <label for="queries">Any other questions</label>
+          <textarea id="queries" name="queries" placeholder="Write something.." style="height:100px"></textarea>
+
+          <input type="submit" value="Submit">
+          <div style="display:none" class="thankyou_message">
+             <h2><em>Thanks!</em> We will get back to you soon!</h2>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section style="background-color:#212121" id="foot">
       <footer>
         <div class="icons">
           <a href="https://www.facebook.com/MakeupArtistKalyani/" target="foo" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/moksha_bridal_studio/" target="foo" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/919176621346" target="foo" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p>Copyright Moksha Bridal Studio | +91-9176621346 | kalyaniramesh12@gmail.com</p>
+        <p>Copyright ©️ Moksha Bridal Studio | +91-9176621346 | kalyaniramesh12@gmail.com</p>
       </footer>
     </section>
     <script src="lightbox-plus-jquery.min.js"></script>
-
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
   </body>
 
 </html>
